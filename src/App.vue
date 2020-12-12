@@ -1,16 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
+  <Toast></Toast>
+
+  <img alt="Vue logo"  src="./assets/logo.png" style="  position: fixed;
+                                                        top: 0px;
+                                                        z-index:-10;
+                                                        left: 0px;
+                                                        right: 0px;
+                                                        bottom: 0;
+                                                        margin: auto;
+                                                        width: -webkit-fill-available;
+                                                        opacity: 0.15;
+                                                        ">
   <HelloWorld msg="Welcome to Your Vue.js App"/>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import Toast from 'primevue/toast';
+
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    'HelloWorld':HelloWorld,
+    'Toast':Toast
   }
+
 }
 </script>
 
@@ -23,4 +39,6 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+
 </style>
